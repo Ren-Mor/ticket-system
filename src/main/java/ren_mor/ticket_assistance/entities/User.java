@@ -1,10 +1,14 @@
 package ren_mor.ticket_assistance.entities;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import ren_mor.ticket_assistance.enums.UserRole;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -86,4 +90,6 @@ public class User {
         this.updatedAt = updatedAt;
     }
 }
+
+
 
